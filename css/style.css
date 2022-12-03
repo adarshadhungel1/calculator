@@ -10,11 +10,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: aqua;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
 }
 
 .display{
     border-radius: 7px;
-    background-color:  rgb(221, 23, 23);
+    background-color:  rgb(95, 95, 95);
     height: 70px;
-    width: auto;;
+    width: 243.5px;;
+    margin-bottom: 10px;
 }
