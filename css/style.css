@@ -4,3 +4,17 @@
     width: 50px;
     border-radius: 8px;
 }
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.display{
+    border-radius: 7px;
+    background-color:  rgb(221, 23, 23);
+    height: 70px;
+    width: auto;;
+}
