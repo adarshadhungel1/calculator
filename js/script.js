@@ -14,7 +14,7 @@ function getInnerValue(e){
     }
 
     if(keyValue =='+' ||keyValue =='-' ||keyValue =='x' ||keyValue =='/' ||keyValue =='='){
-        if(isA){
+        if(isA && !isB){
             a = parseFloat(tempa);
             tempa = '';
             console.log(a);
@@ -24,7 +24,7 @@ function getInnerValue(e){
             isA = false;
             isB = true;
         }
-        else{
+        else if(isB && !isA){
             b = parseFloat(tempb);
             tempb = '';
             console.log(b);
