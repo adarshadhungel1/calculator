@@ -21,6 +21,22 @@
     border-radius: 7px;
     background-color:  rgb(95, 95, 95);
     height: 70px;
-    width: 243.5px;;
+    width: 243.5px;
     margin-bottom: 10px;
+}
+
+.bottom{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.top{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    font-size: small;
+    height: 25px;
 }
