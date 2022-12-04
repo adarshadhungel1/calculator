@@ -43,7 +43,7 @@ function getInnerValue(e){
     let disp = document.querySelector(".bottom");
     let keyValue = e.target.innerHTML;
     
-    if (keyValue != '='){
+    if (keyValue != '=' && keyValue !='+' && keyValue !='-' && keyValue !='x' && keyValue !='/' ){
         disp.innerHTML += keyValue;
     }
     
