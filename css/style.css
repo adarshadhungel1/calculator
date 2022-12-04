@@ -29,7 +29,8 @@
     margin-top: 3px;
     margin-bottom: 5px;
     margin-left: 12px;
-    font-size: 45px;
+    margin-right: 5px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -37,7 +38,8 @@
     margin-top: 6px;
     margin-bottom: 5px;
     margin-left: 12px;
-    font-size: 35px;
+    font-size: 25px;
     height: 25px;
+    font-weight: bold;
     text-align: end;
 }
