@@ -1,36 +1,36 @@
-function operate(){
+function operate(sign = ''){
     let disp = document.querySelector(".bottom");
     if (operation == '+'){
         let temp = a+b;
         a = temp;
         let topdisp = document.querySelector(".top");
-        topdisp.innerHTML = temp.toString() + arguments[0];
+        topdisp.innerHTML = temp.toString() + sign;
         disp.innerHTML = '';
     }
     if (operation == '-'){
         let temp = a-b;
         a = temp;
         let topdisp = document.querySelector(".top");
-        topdisp.innerHTML = temp.toString() + arguments[0];
+        topdisp.innerHTML = temp.toString() + sign;
         disp.innerHTML = '';
     }
     if (operation == 'x'){
         let temp = a*b;
         a = temp;
         let topdisp = document.querySelector(".top");
-        topdisp.innerHTML = temp.toString() + arguments[0];
+        topdisp.innerHTML = temp.toString() + sign;
         disp.innerHTML = '';
     }
     if (operation == '/'){
         let temp = a/b;
         a = temp;
         let topdisp = document.querySelector(".top");
-        topdisp.innerHTML = temp.toString() + arguments[0];
+        topdisp.innerHTML = temp.toString() + sign;
         disp.innerHTML = '';
     }
 
-    if (arguments[0]){
-        operation = arguments[0];
+    if (sign != ''){
+        operation = sign;
     }
     else{
         operation = '';
