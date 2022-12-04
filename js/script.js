@@ -28,6 +28,9 @@ function getInnerValue(e){
             b = parseFloat(tempb);
             tempb = '';
             console.log(b);
+            if (keyValue != '='){
+                //operate
+            }
         }
         if (keyValue != '='){
             operation = keyValue;
