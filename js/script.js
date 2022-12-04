@@ -6,7 +6,7 @@ function getInnerValue(e){
         disp.innerHTML += keyValue;
     }
     
-    if (isA){
+    if (isA && !isB){
         tempa += keyValue;
     }
     else{
@@ -22,6 +22,7 @@ function getInnerValue(e){
             topdisp.innerHTML = a.toString() + keyValue;
             disp.innerHTML = '';
             isA = false;
+            isB = true;
         }
         else{
             b = parseFloat(tempb);
@@ -73,6 +74,7 @@ let a = 0;
 let tempb = ''
 let b = 0;
 let isA = true;
+let isB = false;
 let operation = '';
 
 let btnzero = document.querySelector("#zero");
