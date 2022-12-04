@@ -27,7 +27,6 @@ function getInnerValue(e){
         }
         if (keyValue != '='){
             operation = keyValue;
-            disp.innerHTML = '';
         }
         if(keyValue == '='){
             if (operation == '+'){
@@ -35,6 +34,7 @@ function getInnerValue(e){
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
+                disp.innerHTML = '';
                 operation = '';
             }
             if (operation == '-'){
@@ -42,6 +42,7 @@ function getInnerValue(e){
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
+                disp.innerHTML = '';
                 operation = '';
             }
             if (operation == 'x'){
@@ -49,6 +50,7 @@ function getInnerValue(e){
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
+                disp.innerHTML = '';
                 operation = '';
             }
             if (operation == '/'){
@@ -56,6 +58,7 @@ function getInnerValue(e){
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
+                disp.innerHTML = '';
                 operation = '';
             }
         }
