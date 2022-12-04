@@ -1,7 +1,11 @@
 function getInnerValue(e){
     let disp = document.querySelector(".bottom");
     let keyValue = e.target.innerHTML;
-    disp.innerHTML += keyValue;
+    
+    if (keyValue != '='){
+        disp.innerHTML += keyValue;
+    }
+    
     if (isA){
         tempa += keyValue;
     }
