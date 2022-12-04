@@ -35,24 +35,28 @@ function getInnerValue(e){
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
+                operation = '';
             }
             if (operation == '-'){
                 let temp = a-b;
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
+                operation = '';
             }
             if (operation == 'x'){
                 let temp = a*b;
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
+                operation = '';
             }
             if (operation == '/'){
                 let temp = a/b;
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
+                operation = '';
             }
         }
     }
