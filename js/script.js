@@ -1,6 +1,35 @@
 function getInnerValue(e){
+    let disp = document.querySelector(".bottom");
     let keyValue = e.target.innerHTML;
+    disp.innerHTML += keyValue;
+    if (isA){
+        tempa += keyValue;
+    }
+    else{
+        tempb += keyValue;
+    }
+
+    if(keyValue =='+' ||keyValue =='-' ||keyValue =='x' ||keyValue =='/' ||keyValue =='='){
+        if(isA){
+            a = parseFloat(tempa);
+            tempa = '';
+            console.log(a);
+            isA = false;
+        }
+        else{
+            b = parseFloat(tempb);
+            tempb = '';
+            console.log(b);
+        }
+    }
 }
+
+let tempa = ''
+let a = 0;
+let tempb = ''
+let b = 0;
+let isA = true;
+
 
 let btnzero = document.querySelector("#zero");
 let btnone = document.querySelector("#one");
