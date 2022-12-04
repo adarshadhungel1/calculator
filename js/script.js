@@ -23,6 +23,7 @@ function getInnerValue(e){
         }
         if (keyValue != '='){
             operation = keyValue;
+            disp.innerHTML = '';
         }
         if(keyValue == '='){
             if (operation == '+'){
