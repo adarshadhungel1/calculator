@@ -63,8 +63,14 @@ function getInnerValue(e){
             }
             console.log(a);
             let topdisp = document.querySelector(".top");
-            topdisp.innerHTML = a.toString() + keyValue;
-            disp.innerHTML = '';
+            if (keyValue == '='){
+                topdisp.innerHTML = a.toString();
+                disp.innerHTML = '';
+            }
+            else{
+                topdisp.innerHTML = a.toString() + keyValue;
+                disp.innerHTML = '';
+            }
             isA = false;
             isB = true;
         }
