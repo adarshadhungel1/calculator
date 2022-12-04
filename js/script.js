@@ -18,6 +18,9 @@ function getInnerValue(e){
             a = parseFloat(tempa);
             tempa = '';
             console.log(a);
+            let topdisp = document.querySelector(".top");
+            topdisp.innerHTML = a.toString() + keyValue;
+            disp.innerHTML = '';
             isA = false;
         }
         else{
