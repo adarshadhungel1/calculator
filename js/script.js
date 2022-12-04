@@ -1,1 +1,33 @@
-//to do
+let btnzero = document.querySelector("#zero");
+let btnone = document.querySelector("#one");
+let btntwo = document.querySelector("#two");
+let btnthree = document.querySelector("#three");
+let btnfour = document.querySelector("#four");
+let btnfive = document.querySelector("#five");
+let btnsix = document.querySelector("#six");
+let btnseven = document.querySelector("#seven");
+let btneight = document.querySelector("#eight");
+let btnnine = document.querySelector("#nine");
+let btndecimal = document.querySelector("#decimal");
+let btnadd = document.querySelector("#plus");
+let btnsub = document.querySelector("#minus");
+let btnmult = document.querySelector("#multiply");
+let btndiv = document.querySelector("#divide");
+let btnequal = document.querySelector("#equal");
+
+btnzero.addEventListener('click',);
+btnone.addEventListener('click',);
+btntwo.addEventListener('click',);
+btnthree.addEventListener('click',);
+btnfour.addEventListener('click',);
+btnfive.addEventListener('click',);
+btnsix.addEventListener('click',);
+btnseven.addEventListener('click',);
+btneight.addEventListener('click',);
+btnnine.addEventListener('click',);
+btndecimal.addEventListener('click',);
+btnadd.addEventListener('click',);
+btnsub.addEventListener('click',);
+btnmult.addEventListener('click',);
+btndiv.addEventListener('click',);
+btnequal.addEventListener('click',);
