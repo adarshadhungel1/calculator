@@ -29,14 +29,15 @@
     margin-top: 3px;
     margin-bottom: 5px;
     margin-left: 12px;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
 }
 
 .top{
-    margin-top: 3px;
+    margin-top: 6px;
     margin-bottom: 5px;
     margin-left: 12px;
-    font-size: small;
+    font-size: 35px;
     height: 25px;
+    text-align: end;
 }
