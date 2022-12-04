@@ -31,10 +31,11 @@ function operate(){
 
     if (arguments[0]){
         operation = arguments[0];
-        console.log(arguments[0]);
     }
     else{
         operation = '';
+        isA = true;
+        isB = false;
     }
 }
 
