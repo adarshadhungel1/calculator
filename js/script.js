@@ -21,6 +21,33 @@ function getInnerValue(e){
             tempb = '';
             console.log(b);
         }
+            
+        if(keyValue == '='){
+            if (keyValue == '+'){
+                let temp = a+b;
+                a = temp;
+                let topdisp = document.querySelector(".top");
+                topdisp.innerHTML = temp;
+            }
+            if (keyValue == '-'){
+                let temp = a-b;
+                a = temp;
+                let topdisp = document.querySelector(".top");
+                topdisp.innerHTML = temp;
+            }
+            if (keyValue == 'x'){
+                let temp = a*b;
+                a = temp;
+                let topdisp = document.querySelector(".top");
+                topdisp.innerHTML = temp;
+            }
+            if (keyValue == '/'){
+                let temp = a/b;
+                a = temp;
+                let topdisp = document.querySelector(".top");
+                topdisp.innerHTML = temp;
+            }
+        }
     }
 }
 
