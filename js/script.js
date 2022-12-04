@@ -1,3 +1,39 @@
+function operate(){
+    let disp = document.querySelector(".bottom");
+    if (operation == '+'){
+        let temp = a+b;
+        a = temp;
+        let topdisp = document.querySelector(".top");
+        topdisp.innerHTML = temp;
+        disp.innerHTML = '';
+        operation = '';
+    }
+    if (operation == '-'){
+        let temp = a-b;
+        a = temp;
+        let topdisp = document.querySelector(".top");
+        topdisp.innerHTML = temp;
+        disp.innerHTML = '';
+        operation = '';
+    }
+    if (operation == 'x'){
+        let temp = a*b;
+        a = temp;
+        let topdisp = document.querySelector(".top");
+        topdisp.innerHTML = temp;
+        disp.innerHTML = '';
+        operation = '';
+    }
+    if (operation == '/'){
+        let temp = a/b;
+        a = temp;
+        let topdisp = document.querySelector(".top");
+        topdisp.innerHTML = temp;
+        disp.innerHTML = '';
+        operation = '';
+    }
+}
+
 function getInnerValue(e){
     let disp = document.querySelector(".bottom");
     let keyValue = e.target.innerHTML;
@@ -29,45 +65,14 @@ function getInnerValue(e){
             tempb = '';
             console.log(b);
             if (keyValue != '='){
-                //operate
+                operate();
             }
         }
         if (keyValue != '='){
             operation = keyValue;
         }
         if(keyValue == '='){
-            if (operation == '+'){
-                let temp = a+b;
-                a = temp;
-                let topdisp = document.querySelector(".top");
-                topdisp.innerHTML = temp;
-                disp.innerHTML = '';
-                operation = '';
-            }
-            if (operation == '-'){
-                let temp = a-b;
-                a = temp;
-                let topdisp = document.querySelector(".top");
-                topdisp.innerHTML = temp;
-                disp.innerHTML = '';
-                operation = '';
-            }
-            if (operation == 'x'){
-                let temp = a*b;
-                a = temp;
-                let topdisp = document.querySelector(".top");
-                topdisp.innerHTML = temp;
-                disp.innerHTML = '';
-                operation = '';
-            }
-            if (operation == '/'){
-                let temp = a/b;
-                a = temp;
-                let topdisp = document.querySelector(".top");
-                topdisp.innerHTML = temp;
-                disp.innerHTML = '';
-                operation = '';
-            }
+            operate();
         }
     }
 }
