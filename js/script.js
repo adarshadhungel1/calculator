@@ -120,12 +120,12 @@ function clear(){
 }
 
 let tempa = ''
-let a = 0;
+let a = 0; //left hand side operand
 let tempb = ''
-let b = 0;
+let b = 0; //right hand side operand
 let isA = true;
 let isB = false;
-let operation = '';
+let operation = ''; //operation to be performed on a and b
 
 let btnzero = document.querySelector("#zero");
 let btnone = document.querySelector("#one");
