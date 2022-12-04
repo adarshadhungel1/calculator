@@ -9,7 +9,7 @@ function getInnerValue(e){
     if (isA && !isB){
         tempa += keyValue;
     }
-    else{
+    else if (isB && !isA){
         tempb += keyValue;
     }
 
