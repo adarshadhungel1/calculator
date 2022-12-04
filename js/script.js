@@ -6,7 +6,6 @@ function operate(){
         let topdisp = document.querySelector(".top");
         topdisp.innerHTML = temp;
         disp.innerHTML = '';
-        operation = '';
     }
     if (operation == '-'){
         let temp = a-b;
@@ -14,7 +13,6 @@ function operate(){
         let topdisp = document.querySelector(".top");
         topdisp.innerHTML = temp;
         disp.innerHTML = '';
-        operation = '';
     }
     if (operation == 'x'){
         let temp = a*b;
@@ -22,7 +20,6 @@ function operate(){
         let topdisp = document.querySelector(".top");
         topdisp.innerHTML = temp;
         disp.innerHTML = '';
-        operation = '';
     }
     if (operation == '/'){
         let temp = a/b;
@@ -30,6 +27,13 @@ function operate(){
         let topdisp = document.querySelector(".top");
         topdisp.innerHTML = temp;
         disp.innerHTML = '';
+    }
+
+    if (arguments[0]){
+        operation = arguments[0];
+        console.log(arguments[0]);
+    }
+    else{
         operation = '';
     }
 }
@@ -65,7 +69,7 @@ function getInnerValue(e){
             tempb = '';
             console.log(b);
             if (keyValue != '='){
-                operate();
+                operate(keyValue);
             }
         }
         if (keyValue != '='){
