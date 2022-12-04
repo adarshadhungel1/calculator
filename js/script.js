@@ -4,28 +4,28 @@ function operate(){
         let temp = a+b;
         a = temp;
         let topdisp = document.querySelector(".top");
-        topdisp.innerHTML = temp;
+        topdisp.innerHTML = temp.toString() + arguments[0];
         disp.innerHTML = '';
     }
     if (operation == '-'){
         let temp = a-b;
         a = temp;
         let topdisp = document.querySelector(".top");
-        topdisp.innerHTML = temp;
+        topdisp.innerHTML = temp.toString() + arguments[0];
         disp.innerHTML = '';
     }
     if (operation == 'x'){
         let temp = a*b;
         a = temp;
         let topdisp = document.querySelector(".top");
-        topdisp.innerHTML = temp;
+        topdisp.innerHTML = temp.toString() + arguments[0];
         disp.innerHTML = '';
     }
     if (operation == '/'){
         let temp = a/b;
         a = temp;
         let topdisp = document.querySelector(".top");
-        topdisp.innerHTML = temp;
+        topdisp.innerHTML = temp.toString() + arguments[0];
         disp.innerHTML = '';
     }
 
