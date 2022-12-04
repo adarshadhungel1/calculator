@@ -82,6 +82,34 @@ function getInnerValue(e){
     }
 }
 
+function remove(){
+    if(isA){
+        tempa = tempa.substring(0, tempa.length - 1);
+        let disp = document.querySelector(".bottom");
+        disp.innerHTML = tempa;
+    }
+    else{
+        tempb = tempb.substring(0, tempb.length - 1);
+        let disp = document.querySelector(".bottom");
+        disp.innerHTML = tempb;
+    }
+}
+
+function clear(){
+    let tempa = ''
+    let a = 0;
+    let tempb = ''
+    let b = 0;
+    let isA = true;
+    let isB = false;
+    let operation = '';
+    let disp = document.querySelector(".bottom");
+    disp.innerHTML = '';
+    let topdisp = document.querySelector(".top");
+    topdisp.innerHTML = '';
+    console.log('Calcularoe Reseted!!');
+}
+
 let tempa = ''
 let a = 0;
 let tempb = ''
@@ -106,6 +134,8 @@ let btnsub = document.querySelector("#minus");
 let btnmult = document.querySelector("#multiply");
 let btndiv = document.querySelector("#divide");
 let btnequal = document.querySelector("#equals");
+let btnclear = document.querySelector("#Clear");
+let btndel = document.querySelector("#Delete");
 
 btnzero.addEventListener('click',getInnerValue);
 btnone.addEventListener('click',getInnerValue);
@@ -123,3 +153,5 @@ btnsub.addEventListener('click',getInnerValue);
 btnmult.addEventListener('click',getInnerValue);
 btndiv.addEventListener('click',getInnerValue);
 btnequal.addEventListener('click',getInnerValue);
+btnclear.addEventListener('click',clear);
+btndel.addEventListener('click',remove);
