@@ -58,6 +58,9 @@ function getInnerValue(e){
         if(isA && !isB){
             a = parseFloat(tempa);
             tempa = '';
+            if(!a){
+                return;
+            }
             console.log(a);
             let topdisp = document.querySelector(".top");
             topdisp.innerHTML = a.toString() + keyValue;
