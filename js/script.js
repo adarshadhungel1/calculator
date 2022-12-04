@@ -21,27 +21,29 @@ function getInnerValue(e){
             tempb = '';
             console.log(b);
         }
-            
+        if (keyValue != '='){
+            operation = keyValue;
+        }
         if(keyValue == '='){
-            if (keyValue == '+'){
+            if (operation == '+'){
                 let temp = a+b;
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
             }
-            if (keyValue == '-'){
+            if (operation == '-'){
                 let temp = a-b;
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
             }
-            if (keyValue == 'x'){
+            if (operation == 'x'){
                 let temp = a*b;
                 a = temp;
                 let topdisp = document.querySelector(".top");
                 topdisp.innerHTML = temp;
             }
-            if (keyValue == '/'){
+            if (operation == '/'){
                 let temp = a/b;
                 a = temp;
                 let topdisp = document.querySelector(".top");
@@ -56,7 +58,7 @@ let a = 0;
 let tempb = ''
 let b = 0;
 let isA = true;
-
+let operation = '';
 
 let btnzero = document.querySelector("#zero");
 let btnone = document.querySelector("#one");
