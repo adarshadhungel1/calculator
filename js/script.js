@@ -45,13 +45,13 @@ function getInnerValue(e){
     
     if (keyValue != '=' && keyValue !='+' && keyValue !='-' && keyValue !='x' && keyValue !='/' ){
         disp.innerHTML += keyValue;
-    }
-    
-    if (isA && !isB){
-        tempa += keyValue;
-    }
-    else if (isB && !isA){
-        tempb += keyValue;
+
+        if (isA && !isB){
+            tempa += keyValue;
+        }
+        else if (isB && !isA){
+            tempb += keyValue;
+        }
     }
 
     if(keyValue =='+' ||keyValue =='-' ||keyValue =='x' ||keyValue =='/' ||keyValue =='='){
